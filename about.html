@@ -1,23 +1,17 @@
 <!doctype html>
-<!--
-  Material Design Lite
-  Copyright 2015 Google Inc. All rights reserved.
-
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-      https://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License
--->
 <html lang="en">
 
 <head>
+   <script src="jquery-3.2.0.min.js"></script>
+    <script>
+   $(document).ready(function(){
+       $("button").click(function(){
+            $("#div1").fadeIn();
+            $("#div2").fadeIn("slow");
+           $("#div3").fadeIn(3000);
+        });
+    });
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A portfolio template that uses Material Design Lite.">
@@ -74,7 +68,13 @@
                             </p>
                         </div>
 
+                            <p>Demonstrate fadeIn() with different parameters.</p>
 
+                            <button>Click to fade in boxes</button><br><br>
+
+                            <div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+                            <div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+                            <div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
 
 
                         <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">Irure mollit est sit labore</h3>
