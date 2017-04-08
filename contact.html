@@ -6,12 +6,12 @@
     <script>
    $(document).ready(function(){
        $("button1").click(function(){
-            $("#div1").fadeOut("slow");
+            $("#div1").fadeOut();
             $("#div2").fadeIn("slow");
             $("#div3").fadeIn("slow");
         });
         $("button2").click(function(){
-            $("#div1").fadeIn("slow");
+            $("#div1").fadeIn();
             $("#div2").fadeOut("slow");
             $("#div3").fadeOut("slow");
         });
@@ -74,16 +74,17 @@
                         </p>
                         <p>Demonstrate fadeIn() with different parameters.</p>
 
-                            <div id="div1">
-                            <button1>
-                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent">Show</a>
-                            </button1>
-                            </div><br>
+                            <br>
                             <div id="div2">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/BaK1UF4x5CM" frameborder="0" allowfullscreen></iframe>
                             </div><br>
+                            <div id="div1">
+                            <button1>
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent">Show</a>
+                            </button1>
+                            </div>
                             <div id="div3">
-                                <button2>Skip</button2>
+                            <button2>Skip</button2>
                             </div>
                         
                         <form action="#" class="">
