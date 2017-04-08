@@ -2,6 +2,42 @@
 <html lang="en">
 
 <head>
+    <script src="jquery-3.2.0.min.js"></script>
+    <script>
+   $(document).ready(function(){
+       $("button1").click(function(){
+            $("#div1").fadeToggle("slow");
+            $("#div2").fadeToggle("slow");
+            $("#div3").fadeToggle("slow");
+        });
+         
+    });
+    </script>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+            }
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+            }
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+               slides[i].style.display = "none";  
+            }
+        for (i = 0; i < dots.length; i++) {
+               dots[i].className = dots[i].className.replace(" active", "");
+            }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        }
+    </script>  
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A portfolio template that uses Material Design Lite.">
@@ -93,37 +129,18 @@
                 <span class="dot" onclick="currentSlide(1)"></span> 
                 <span class="dot" onclick="currentSlide(2)"></span> 
                 <span class="dot" onclick="currentSlide(3)"></span> 
-                </div>
-                <script>
-                var slideIndex = 1;
-                showSlides(slideIndex);
-
-                function plusSlides(n) {
-                  showSlides(slideIndex += n);
-                }
-
-                function currentSlide(n) {
-                  showSlides(slideIndex = n);
-                }
-
-                function showSlides(n) {
-                  var i;
-                  var slides = document.getElementsByClassName("mySlides");
-                  var dots = document.getElementsByClassName("dot");
-                  if (n > slides.length) {slideIndex = 1}    
-                  if (n < 1) {slideIndex = slides.length}
-                  for (i = 0; i < slides.length; i++) {
-                      slides[i].style.display = "none";  
-                  }
-                  for (i = 0; i < dots.length; i++) {
-                  dots[i].className = dots[i].className.replace(" active", "");
-                  }
-                  slides[slideIndex-1].style.display = "block";  
-                  dots[slideIndex-1].className += " active";
-                  }
-                </script>  
-                
+                </div>             
                 <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
+                    <button1>
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent">Show</a>
+                    </button1> <br>
+                    <div id="div1">
+                    </div><br>
+                    <div id="div2">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BaK1UF4x5CM" frameborder="0" allowfullscreen></iframe>
+                    </div><br>
+                    <div id="div3">
+                    </div><br>
                     
                     <div class="mdl-card__title">
                         <h2 class="mdl-card__title-text">Voluptate voluptate</h2>
