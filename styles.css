@@ -184,6 +184,14 @@
   background: url(images/example-blog03.jpg) center / cover;
 }
 
+.portfolio-blog-card-full-bg1 {
+  background: url(images/land1.jpg) center / cover;
+}
+
+.portfolio-blog-card-full-bg2 {
+  background: url(images/land2.jpg) center / cover;
+}
+
 .portfolio-blog-card-event-bg {
   background: url(images/example-blog05.jpg) center / cover;
 }
