@@ -209,7 +209,16 @@
   padding: 16px;
   background: rgba(0, 0, 0, 0.2);
 }
-
+.portfolio-blog-card-bg1 > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.portfolio-blog-card-bg2 > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
 img.article-image {
   width: 100%;
   height: auto;
