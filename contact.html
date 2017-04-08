@@ -81,6 +81,7 @@
                             </div><br>
                             <div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
                             <div id="div3"><button2>Skip</button2></div>
+                        
                         <form action="#" class="">
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                 <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="Name">
@@ -99,6 +100,21 @@
                                 <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">
                                     Submit
                                 </button>
+<script>
+// Check browser support
+if (typeof(Storage) !== "undefined") {
+    // Store
+    localStorage.setItem("Comment", "note");
+    // Retrieve
+    document.getElementById("cm").innerHTML = localStorage.getItem("Commment");
+} else {
+    document.getElementById("cm").innerHTML = "Sorry, your browser does not support Web Storage...";
+}
+</script>
+                                <button1><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent">Show</a>
+                                    <div id="div1" id="cm">
+                                        </div>
+                            </button1><br><br>
                             </p>
                         </form>
                     </div>
